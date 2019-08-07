@@ -13122,7 +13122,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[650]:</div>
+<div class="prompt input_prompt">In&nbsp;[737]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13158,7 +13158,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[651]:</div>
+<div class="prompt input_prompt">In&nbsp;[738]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">customers_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/Users/utkarshdalal/workspace/worldcover-coding-challenge/tables/wc_customers.csv&#39;</span><span class="p">)</span>
@@ -13316,7 +13316,7 @@ if (document.getElementById("ab2df8c2-683b-4f86-94be-1763912807cf")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[662]:</div>
+<div class="prompt input_prompt">In&nbsp;[739]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">buyers_by_season_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">policies_df</span><span class="p">,</span> <span class="n">customers_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;customer_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;season&#39;</span><span class="p">,</span> <span class="s1">&#39;community_id&#39;</span><span class="p">])[</span><span class="s1">&#39;customer_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -13477,7 +13477,7 @@ if (document.getElementById("f2d19b31-bb49-454f-b44f-4b098e87b18e")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="prompt input_prompt">In&nbsp;[740]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">times_policy_purchased_df</span> <span class="o">=</span> <span class="n">policies_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;customer_id&#39;</span><span class="p">)[</span><span class="s1">&#39;season&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -13499,7 +13499,7 @@ if (document.getElementById("f2d19b31-bb49-454f-b44f-4b098e87b18e")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[208]:</div>
+<div class="prompt input_prompt">In&nbsp;[741]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">single_buyer_count_by_community</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">single_buyer_df</span><span class="p">,</span> <span class="n">customers_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;customer_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;community_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -13514,7 +13514,7 @@ if (document.getElementById("f2d19b31-bb49-454f-b44f-4b098e87b18e")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="prompt input_prompt">In&nbsp;[742]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">repeat_buyer_count_by_community</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">repeat_buyer_df</span><span class="p">,</span> <span class="n">customers_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;customer_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;community_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -13529,7 +13529,7 @@ if (document.getElementById("f2d19b31-bb49-454f-b44f-4b098e87b18e")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[233]:</div>
+<div class="prompt input_prompt">In&nbsp;[743]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">buyers_by_season_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">policies_df</span><span class="p">,</span> <span class="n">customers_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;customer_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;season&#39;</span><span class="p">,</span> <span class="s1">&#39;community_id&#39;</span><span class="p">])[</span><span class="s1">&#39;customer_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -13631,7 +13631,7 @@ if (document.getElementById("9105ad70-208f-48b5-b7c5-7721f57313e7")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[284]:</div>
+<div class="prompt input_prompt">In&nbsp;[744]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">buyers_by_community</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">single_buyer_count_by_community</span><span class="p">,</span> <span class="n">repeat_buyer_count_by_community</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;community_id&#39;</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;_single&#39;</span><span class="p">,</span> <span class="s1">&#39;_repeat&#39;</span><span class="p">))</span>
@@ -13644,7 +13644,7 @@ if (document.getElementById("9105ad70-208f-48b5-b7c5-7721f57313e7")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[294]:</div>
+<div class="prompt input_prompt">In&nbsp;[745]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">buyers_by_community</span><span class="p">[</span><span class="s1">&#39;total_buyers&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">buyers_by_community</span><span class="p">[</span><span class="s1">&#39;customer_id_single&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">buyers_by_community</span><span class="p">[</span><span class="s1">&#39;customer_id_repeat&#39;</span><span class="p">]</span>
@@ -13659,7 +13659,7 @@ if (document.getElementById("9105ad70-208f-48b5-b7c5-7721f57313e7")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[601]:</div>
+<div class="prompt input_prompt">In&nbsp;[746]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mean_retention_rate</span> <span class="o">=</span> <span class="n">buyers_by_community</span><span class="p">[</span><span class="s1">&#39;retention_rate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -13677,7 +13677,7 @@ if (document.getElementById("9105ad70-208f-48b5-b7c5-7721f57313e7")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[601]:</div>
+    <div class="prompt output_prompt">Out[746]:</div>
 
 
 
@@ -13872,7 +13872,7 @@ if (document.getElementById("e5131ffc-5c47-4079-8b7c-a6e6f920743d")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[605]:</div>
+<div class="prompt input_prompt">In&nbsp;[747]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Socio-economic factors influencing retention</span>
@@ -13893,7 +13893,7 @@ if (document.getElementById("e5131ffc-5c47-4079-8b7c-a6e6f920743d")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[605]:</div>
+    <div class="prompt output_prompt">Out[747]:</div>
 
 
 
@@ -15700,13 +15700,13 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Here,-we-only-consider-whether-policies-were-paid-out---we-disregard-policies-where-payouts-are-requested-or-due.">Here, we only consider whether policies were paid out - we disregard policies where payouts are requested or due.<a class="anchor-link" href="#Here,-we-only-consider-whether-policies-were-paid-out---we-disregard-policies-where-payouts-are-requested-or-due.">&#182;</a></h3>
+<h3 id="Here,-we-only-consider-whether-policies-were-paid-out---we-disregard-policies-where-payouts-are-requested-or-due.">Here, we only consider whether policies were paid out - we disregard policies where payouts are requested or due.<a class="anchor-link" href="#Here,-we-only-consider-whether-policies-were-paid-out---we-disregard-policies-where-payouts-are-requested-or-due.">&#182;</a></h3><h3 id="For-this-we-look-both-at-policies-with-status-paid-out-and-community-payouts-with-status-paid-or-renewed">For this we look both at policies with status <em>paid out</em> and community payouts with status <em>paid</em> or <em>renewed</em><a class="anchor-link" href="#For-this-we-look-both-at-policies-with-status-paid-out-and-community-payouts-with-status-paid-or-renewed">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[492]:</div>
+<div class="prompt input_prompt">In&nbsp;[888]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">policies_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;status&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -15722,7 +15722,7 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[492]:</div>
+    <div class="prompt output_prompt">Out[888]:</div>
 
 
 
@@ -15754,11 +15754,9 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
       <th>date_priced</th>
       <th>crop</th>
       <th>season</th>
-      <th>retained_customer</th>
     </tr>
     <tr>
       <th>status</th>
-      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -15782,7 +15780,6 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
       <td>210</td>
       <td>210</td>
       <td>210</td>
-      <td>210</td>
     </tr>
     <tr>
       <th>dispute</th>
@@ -15793,7 +15790,6 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
       <td>49</td>
       <td>37</td>
       <td>0</td>
-      <td>49</td>
       <td>49</td>
       <td>49</td>
     </tr>
@@ -15808,7 +15804,6 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
       <td>14192</td>
       <td>19780</td>
       <td>19780</td>
-      <td>19780</td>
     </tr>
     <tr>
       <th>paid out</th>
@@ -15821,7 +15816,6 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
       <td>1574</td>
       <td>1579</td>
       <td>1579</td>
-      <td>1579</td>
     </tr>
     <tr>
       <th>payout due</th>
@@ -15831,7 +15825,6 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
       <td>678</td>
       <td>678</td>
       <td>596</td>
-      <td>678</td>
       <td>678</td>
       <td>678</td>
       <td>678</td>
@@ -15847,7 +15840,6 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
       <td>58</td>
       <td>58</td>
       <td>58</td>
-      <td>58</td>
     </tr>
     <tr>
       <th>pending</th>
@@ -15858,7 +15850,6 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
       <td>1632</td>
       <td>52</td>
       <td>6</td>
-      <td>1632</td>
       <td>1632</td>
       <td>1632</td>
     </tr>
@@ -15873,11 +15864,9 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
       <td>0</td>
       <td>156</td>
       <td>156</td>
-      <td>156</td>
     </tr>
     <tr>
       <th>priced</th>
-      <td>2</td>
       <td>2</td>
       <td>2</td>
       <td>2</td>
@@ -15899,11 +15888,9 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
       <td>2</td>
       <td>45</td>
       <td>45</td>
-      <td>45</td>
     </tr>
     <tr>
       <th>triggered</th>
-      <td>6</td>
       <td>6</td>
       <td>6</td>
       <td>6</td>
@@ -15925,6 +15912,213 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[889]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">customers_w_community_payouts_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">customers_df</span><span class="p">,</span> <span class="n">community_payouts_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;community_id&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[890]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">customers_w_community_payouts_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;status&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[890]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>customer_id</th>
+      <th>community_id</th>
+      <th>gender</th>
+      <th>literacy</th>
+      <th>has_mobile_money</th>
+      <th>registration_date</th>
+      <th>farm_size</th>
+      <th>created_at_x</th>
+      <th>updated_at</th>
+      <th>ussd_created</th>
+      <th>has_phone</th>
+      <th>retained_customer</th>
+      <th>community_payout_id</th>
+      <th>paid_date</th>
+      <th>paid_by</th>
+      <th>paid_to</th>
+      <th>transaction_amount</th>
+      <th>confirmation_code</th>
+      <th>created_at_y</th>
+      <th>season</th>
+    </tr>
+    <tr>
+      <th>status</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>paid</th>
+      <td>1641</td>
+      <td>1641</td>
+      <td>491</td>
+      <td>1641</td>
+      <td>1142</td>
+      <td>1641</td>
+      <td>1641</td>
+      <td>1641</td>
+      <td>747</td>
+      <td>1641</td>
+      <td>1641</td>
+      <td>1641</td>
+      <td>1641</td>
+      <td>1641</td>
+      <td>1641</td>
+      <td>1641</td>
+      <td>1641</td>
+      <td>1632</td>
+      <td>1641</td>
+      <td>1641</td>
+    </tr>
+    <tr>
+      <th>payout due</th>
+      <td>4524</td>
+      <td>4524</td>
+      <td>1716</td>
+      <td>4524</td>
+      <td>741</td>
+      <td>4524</td>
+      <td>4524</td>
+      <td>4524</td>
+      <td>1740</td>
+      <td>4524</td>
+      <td>4524</td>
+      <td>4524</td>
+      <td>4524</td>
+      <td>4524</td>
+      <td>4524</td>
+      <td>4524</td>
+      <td>4524</td>
+      <td>4076</td>
+      <td>4524</td>
+      <td>4524</td>
+    </tr>
+    <tr>
+      <th>renewed</th>
+      <td>3487</td>
+      <td>3487</td>
+      <td>1487</td>
+      <td>3487</td>
+      <td>947</td>
+      <td>3485</td>
+      <td>3487</td>
+      <td>3487</td>
+      <td>1715</td>
+      <td>3487</td>
+      <td>3487</td>
+      <td>3487</td>
+      <td>3487</td>
+      <td>3487</td>
+      <td>3487</td>
+      <td>3487</td>
+      <td>3487</td>
+      <td>171</td>
+      <td>3487</td>
+      <td>3487</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[891]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">customers_w_community_payouts_df</span> <span class="o">=</span> <span class="n">customers_w_community_payouts_df</span><span class="p">[</span><span class="n">customers_w_community_payouts_df</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;paid&#39;</span><span class="p">,</span> <span class="s1">&#39;renewed&#39;</span><span class="p">])]</span>
+<span class="n">customers_w_community_payouts_df</span> <span class="o">=</span> <span class="n">customers_w_community_payouts_df</span><span class="p">[[</span><span class="s1">&#39;customer_id&#39;</span><span class="p">,</span> <span class="s1">&#39;status&#39;</span><span class="p">,</span> <span class="s1">&#39;season&#39;</span><span class="p">]]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[896]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">customers_w_community_payouts_df</span> <span class="o">=</span> <span class="n">customers_w_community_payouts_df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;customer_id&#39;</span><span class="p">,</span> <span class="s1">&#39;season&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15934,13 +16128,14 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[498]:</div>
+<div class="prompt input_prompt">In&nbsp;[897]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">seasons_to_num</span><span class="o">=</span> <span class="p">{</span><span class="s1">&#39;2016 major&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;2017 major&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;2018 major&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;2018 minor&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;2019 major&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;2019 minor&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">}</span>
 
 <span class="n">policies_with_payouts_df</span> <span class="o">=</span> <span class="n">policies_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">policies_with_payouts_df</span><span class="p">[</span><span class="s1">&#39;paid_out&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">policies_with_payouts_df</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;paid out&#39;</span>
+<span class="n">policies_with_payouts_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">policies_with_payouts_df</span><span class="p">,</span> <span class="n">customers_w_community_payouts_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;customer_id&#39;</span><span class="p">,</span> <span class="s1">&#39;season&#39;</span><span class="p">],</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;_community_payout&#39;</span><span class="p">),</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+<span class="n">policies_with_payouts_df</span><span class="p">[</span><span class="s1">&#39;paid_out&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">policies_with_payouts_df</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;paid out&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">policies_with_payouts_df</span><span class="p">[</span><span class="s1">&#39;status_community_payout&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">())</span>
 <span class="n">policies_with_payouts_df</span><span class="p">[</span><span class="s1">&#39;season_num&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">policies_with_payouts_df</span><span class="p">[</span><span class="s1">&#39;season&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">seasons_to_num</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
 </pre></div>
 
@@ -15951,11 +16146,11 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[547]:</div>
+<div class="prompt input_prompt">In&nbsp;[919]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">sorted_policies_with_payouts_df</span> <span class="o">=</span> <span class="n">policies_with_payouts_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;season&#39;</span><span class="p">)</span>
-<span class="n">first_payout_by_customer</span> <span class="o">=</span> <span class="n">sorted_policies_with_payouts_df</span><span class="p">[</span><span class="n">sorted_policies_with_payouts_df</span><span class="p">[</span><span class="s1">&#39;paid_out&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;customer_id&#39;</span><span class="p">,</span> <span class="s1">&#39;season&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">first</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">first_payout_by_customer</span> <span class="o">=</span> <span class="n">sorted_policies_with_payouts_df</span><span class="p">[</span><span class="n">sorted_policies_with_payouts_df</span><span class="p">[</span><span class="s1">&#39;paid_out&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;customer_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 <span class="n">paid_out_customers</span> <span class="o">=</span> <span class="n">first_payout_by_customer</span><span class="p">[[</span><span class="s1">&#39;customer_id&#39;</span><span class="p">,</span> <span class="s1">&#39;season&#39;</span><span class="p">,</span> <span class="s1">&#39;season_num&#39;</span><span class="p">]]</span>
 <span class="n">num_paid_out_customers</span> <span class="o">=</span> <span class="n">paid_out_customers</span><span class="p">[</span><span class="s1">&#39;customer_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 <span class="c1"># This is the number of customers who were paid out</span>
@@ -15968,7 +16163,7 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[548]:</div>
+<div class="prompt input_prompt">In&nbsp;[920]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_paid_out_customers</span>
@@ -15984,13 +16179,13 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[548]:</div>
+    <div class="prompt output_prompt">Out[920]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>1569</pre>
+<pre>4371</pre>
 </div>
 
 </div>
@@ -16001,11 +16196,11 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[534]:</div>
+<div class="prompt input_prompt">In&nbsp;[922]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">paid_out_customers</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;season&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
-<span class="c1"># Almost all payouts happened in the 2018 major season</span>
+<span class="c1"># Almost all first payouts happened in 2018</span>
 </pre></div>
 
     </div>
@@ -16018,7 +16213,7 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[534]:</div>
+    <div class="prompt output_prompt">Out[922]:</div>
 
 
 
@@ -16058,18 +16253,18 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
     </tr>
     <tr>
       <th>2018 major</th>
-      <td>1538</td>
-      <td>1538</td>
+      <td>3422</td>
+      <td>3422</td>
     </tr>
     <tr>
       <th>2018 minor</th>
-      <td>26</td>
-      <td>26</td>
+      <td>945</td>
+      <td>945</td>
     </tr>
     <tr>
       <th>2019 major</th>
-      <td>2</td>
-      <td>2</td>
+      <td>1</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -16085,16 +16280,16 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="However,-we-see-that-most-payouts-happened-in-the-2018-major-season.-Since-not-many-seasons-have-passed-after-that,-we-may-not-have-enough-data-to-say-definitively-what-effect-this-has-on-retention-rates.">However, we see that most payouts happened in the 2018 major season. Since not many seasons have passed after that, we may not have enough data to say definitively what effect this has on retention rates.<a class="anchor-link" href="#However,-we-see-that-most-payouts-happened-in-the-2018-major-season.-Since-not-many-seasons-have-passed-after-that,-we-may-not-have-enough-data-to-say-definitively-what-effect-this-has-on-retention-rates.">&#182;</a></h3><h3 id="At-first-glance-though,-receiving-a-payout-appears-to-have-a-strong-negative-effect-on-retention-rates.-Only-65-of-1569-customers-who-received-a-payout-took-out-a-policy-for-a-future-season.">At first glance though, receiving a payout appears to have a strong negative effect on retention rates. Only 65 of 1569 customers who received a payout took out a policy for a future season.<a class="anchor-link" href="#At-first-glance-though,-receiving-a-payout-appears-to-have-a-strong-negative-effect-on-retention-rates.-Only-65-of-1569-customers-who-received-a-payout-took-out-a-policy-for-a-future-season.">&#182;</a></h3>
+<h3 id="We-see-that-most-first-time-payouts-happened-in-the-2018-major-season.-Since-not-many-seasons-have-passed-since-then,-the-actual-retention-rate-for-paid-out-customers-could-be-even-higher.">We see that most first-time payouts happened in the 2018 major season. Since not many seasons have passed since then, the actual retention rate for paid out customers could be even higher.<a class="anchor-link" href="#We-see-that-most-first-time-payouts-happened-in-the-2018-major-season.-Since-not-many-seasons-have-passed-since-then,-the-actual-retention-rate-for-paid-out-customers-could-be-even-higher.">&#182;</a></h3><h3 id="At-first-glance,-receiving-a-payout-appears-to-have-a-strong-positive-effect-on-retention-rates.-1199-of-4371-customers-who-received-a-payout-took-out-a-policy-for-a-future-season.">At first glance, receiving a payout appears to have a strong positive effect on retention rates. 1199 of 4371 customers who received a payout took out a policy for a future season.<a class="anchor-link" href="#At-first-glance,-receiving-a-payout-appears-to-have-a-strong-positive-effect-on-retention-rates.-1199-of-4371-customers-who-received-a-payout-took-out-a-policy-for-a-future-season.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[685]:</div>
+<div class="prompt input_prompt">In&nbsp;[924]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">joined_payout_df</span> <span class="o">=</span> <span class="n">policies_with_payouts_df</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">paid_out_customers</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;customer_id&#39;</span><span class="p">],</span> <span class="n">lsuffix</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">rsuffix</span><span class="o">=</span><span class="s1">&#39;_paid_out&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;inner&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">joined_payout_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">policies_with_payouts_df</span><span class="p">,</span> <span class="n">paid_out_customers</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;customer_id&#39;</span><span class="p">,</span> <span class="n">suffixes</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;_paid_out&#39;</span><span class="p">))</span>
 <span class="n">policies_after_payout</span> <span class="o">=</span> <span class="n">joined_payout_df</span><span class="p">[</span><span class="n">joined_payout_df</span><span class="p">[</span><span class="s1">&#39;season_num&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">joined_payout_df</span><span class="p">[</span><span class="s1">&#39;season_num_paid_out&#39;</span><span class="p">]]</span>
 <span class="n">num_customers_after_payout</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">policies_after_payout</span><span class="p">[</span><span class="s1">&#39;customer_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
 <span class="n">num_customers_after_payout</span>
@@ -16110,13 +16305,13 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[685]:</div>
+    <div class="prompt output_prompt">Out[924]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>65</pre>
+<pre>1199</pre>
 </div>
 
 </div>
@@ -16127,7 +16322,7 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[649]:</div>
+<div class="prompt input_prompt">In&nbsp;[925]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">retention_rates</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;All Customers&#39;</span><span class="p">,</span> <span class="s1">&#39;Customers with Prior Payout&#39;</span><span class="p">]</span>
@@ -16144,9 +16339,6 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 <span class="p">)</span>
 
 <span class="n">pyo</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">))</span>
-
-<span class="c1"># Customers with a prior payout are much less likely than average to be retained. However, most payouts happened in</span>
-<span class="c1"># 2018 major, meaning that this gives us much less data to work with, since few policies were purchased after 2018</span>
 </pre></div>
 
     </div>
@@ -16164,11 +16356,11 @@ if (document.getElementById("604f13a6-6261-4163-aa10-b422e0460c4f")) {
 
 
 <div class="output_html rendered_html output_subarea ">
-<div id="9f546a06-e47f-458a-aa23-ae112afbfe1c" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
-if (document.getElementById("9f546a06-e47f-458a-aa23-ae112afbfe1c")) {
-    Plotly.newPlot("9f546a06-e47f-458a-aa23-ae112afbfe1c", [{"name": "Retention Rates", "x": ["All Customers", "Customers with Prior Payout"], "y": [15.689056308399785, 4.1427660930529], "type": "bar", "uid": "ab6bf779-95b2-41e4-b18f-7990268cee3c"}], {"title": {"text": "Retention Rates by Past Payout"}, "yaxis": {"title": {"text": "% of Customers Retained"}}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
+<div id="bc221b69-fce9-4ff3-be0d-abb40486a59f" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
+if (document.getElementById("bc221b69-fce9-4ff3-be0d-abb40486a59f")) {
+    Plotly.newPlot("bc221b69-fce9-4ff3-be0d-abb40486a59f", [{"name": "Retention Rates", "x": ["All Customers", "Customers with Prior Payout"], "y": [15.689056308399785, 27.430793868679938], "type": "bar", "uid": "ab19f0a8-0eca-46ba-8113-14a55fd666e4"}], {"title": {"text": "Retention Rates by Past Payout"}, "yaxis": {"title": {"text": "% of Customers Retained"}}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
 }
-});</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("9f546a06-e47f-458a-aa23-ae112afbfe1c")) {window._Plotly.Plots.resize(document.getElementById("9f546a06-e47f-458a-aa23-ae112afbfe1c"));};})</script>
+});</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("bc221b69-fce9-4ff3-be0d-abb40486a59f")) {window._Plotly.Plots.resize(document.getElementById("bc221b69-fce9-4ff3-be0d-abb40486a59f"));};})</script>
 </div>
 
 </div>
@@ -16180,18 +16372,24 @@ if (document.getElementById("9f546a06-e47f-458a-aa23-ae112afbfe1c")) {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="But-the-average-policy-premium-for-these-customers-is-higher-than-average.-Again,-with-such-a-small-number-of-customers,-it-is-difficult-to-say-definitively.">But the average policy premium for these customers is higher than average. Again, with such a small number of customers, it is difficult to say definitively.<a class="anchor-link" href="#But-the-average-policy-premium-for-these-customers-is-higher-than-average.-Again,-with-such-a-small-number-of-customers,-it-is-difficult-to-say-definitively.">&#182;</a></h3>
+<h3 id="Customers-who-received-a-payout-are-almost-twice-as-likely-to-be-retained!">Customers who received a payout are almost twice as likely to be retained!<a class="anchor-link" href="#Customers-who-received-a-payout-are-almost-twice-as-likely-to-be-retained!">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Let's-also-look-at-policy-premiums-for-these-customers.-Note-that-here-I-am-summing-policy_transactions-with-the-same-customer_policy_id,-since-I-assume-they-are-multi-part-payments-for-one-premium.">Let's also look at policy premiums for these customers. Note that here I am summing policy_transactions with the same customer_policy_id, since I assume they are multi-part payments for one premium.<a class="anchor-link" href="#Let's-also-look-at-policy-premiums-for-these-customers.-Note-that-here-I-am-summing-policy_transactions-with-the-same-customer_policy_id,-since-I-assume-they-are-multi-part-payments-for-one-premium.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[574]:</div>
+<div class="prompt input_prompt">In&nbsp;[945]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">avg_policy_premium</span> <span class="o">=</span> <span class="n">policy_transactions_df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s1">&#39;customer_policy_id&#39;</span><span class="p">,</span> <span class="n">keep</span><span class="o">=</span><span class="s1">&#39;last&#39;</span><span class="p">)[</span><span class="s1">&#39;transaction_amount&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="n">policies_after_payout_with_premiums</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">policies_after_payout</span><span class="p">,</span> <span class="n">policy_transactions_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;customer_policy_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s1">&#39;customer_policy_id&#39;</span><span class="p">,</span> <span class="n">keep</span><span class="o">=</span><span class="s1">&#39;last&#39;</span><span class="p">)</span>
-<span class="n">avg_policy_after_payout_premium</span> <span class="o">=</span> <span class="n">policies_after_payout_with_premiums</span><span class="p">[</span><span class="s1">&#39;transaction_amount&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">avg_policy_premium</span> <span class="o">=</span> <span class="n">policy_transactions_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;customer_policy_id&#39;</span><span class="p">)[</span><span class="s1">&#39;transaction_amount&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">avg_policy_after_payout_premium</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">policies_after_payout</span><span class="p">,</span> <span class="n">policy_transactions_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;customer_policy_id&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;customer_policy_id&#39;</span><span class="p">)[</span><span class="s1">&#39;transaction_amount&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -16201,7 +16399,7 @@ if (document.getElementById("9f546a06-e47f-458a-aa23-ae112afbfe1c")) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[594]:</div>
+<div class="prompt input_prompt">In&nbsp;[946]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">avg_premiums</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;All Customers&#39;</span><span class="p">,</span> <span class="s1">&#39;Customers with Prior Payout&#39;</span><span class="p">]</span>
@@ -16216,9 +16414,6 @@ if (document.getElementById("9f546a06-e47f-458a-aa23-ae112afbfe1c")) {
     <span class="p">)</span>
 <span class="p">)</span>
 <span class="n">pyo</span><span class="o">.</span><span class="n">iplot</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">))</span>
-
-<span class="c1"># Customers with a prior payout have higher premiums than average. However, the number of such customers is so small</span>
-<span class="c1"># it may not be accurate</span>
 </pre></div>
 
     </div>
@@ -16236,11 +16431,11 @@ if (document.getElementById("9f546a06-e47f-458a-aa23-ae112afbfe1c")) {
 
 
 <div class="output_html rendered_html output_subarea ">
-<div id="54ac4be2-08fa-4993-8125-e3578a7e8b04" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
-if (document.getElementById("54ac4be2-08fa-4993-8125-e3578a7e8b04")) {
-    Plotly.newPlot("54ac4be2-08fa-4993-8125-e3578a7e8b04", [{"marker": {"color": "green"}, "name": "Avg Premiums", "x": ["All Customers", "Customers with Prior Payout"], "y": [9.164985471149855, 12.584415584415584], "type": "bar", "uid": "5dd65322-fef4-4145-a7cd-4fee8b232e4c"}], {"title": {"text": "Avg Policy Premiums"}, "yaxis": {"title": {"text": "GHS"}}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
+<div id="87babb8e-fe85-4c53-a3b7-b088d26463ae" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";
+if (document.getElementById("87babb8e-fe85-4c53-a3b7-b088d26463ae")) {
+    Plotly.newPlot("87babb8e-fe85-4c53-a3b7-b088d26463ae", [{"marker": {"color": "green"}, "name": "Avg Premiums", "x": ["All Customers", "Customers with Prior Payout"], "y": [10.5126400996264, 14.63022113022113], "type": "bar", "uid": "9eae0c38-00e1-4e4c-9b3d-4f68c4416c7b"}], {"title": {"text": "Avg Policy Premiums"}, "yaxis": {"title": {"text": "GHS"}}}, {"showLink": false, "linkText": "Export to plot.ly", "plotlyServerURL": "https://plot.ly"}); 
 }
-});</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("54ac4be2-08fa-4993-8125-e3578a7e8b04")) {window._Plotly.Plots.resize(document.getElementById("54ac4be2-08fa-4993-8125-e3578a7e8b04"));};})</script>
+});</script><script type="text/javascript">window.addEventListener("resize", function(){if (document.getElementById("87babb8e-fe85-4c53-a3b7-b088d26463ae")) {window._Plotly.Plots.resize(document.getElementById("87babb8e-fe85-4c53-a3b7-b088d26463ae"));};})</script>
 </div>
 
 </div>
@@ -16248,6 +16443,13 @@ if (document.getElementById("54ac4be2-08fa-4993-8125-e3578a7e8b04")) {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Customers-who-have-received-payouts-in-the-past-have-policy-premiums-over-a-third-higher-than-average!">Customers who have received payouts in the past have policy premiums over a third higher than average!<a class="anchor-link" href="#Customers-who-have-received-payouts-in-the-past-have-policy-premiums-over-a-third-higher-than-average!">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -16259,16 +16461,29 @@ if (document.getElementById("54ac4be2-08fa-4993-8125-e3578a7e8b04")) {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Questions-I-would-explore-with-more-time:">Questions I would explore with more time:<a class="anchor-link" href="#Questions-I-would-explore-with-more-time:">&#182;</a></h2><h3 id="1.-What-effect-does-type-of-crop-have-on-retention-rates?-Are-some-crops-more-precious-and-therefore-more-likely-to-be-insured?">1. What effect does type of crop have on retention rates? Are some crops more precious and therefore more likely to be insured?<a class="anchor-link" href="#1.-What-effect-does-type-of-crop-have-on-retention-rates?-Are-some-crops-more-precious-and-therefore-more-likely-to-be-insured?">&#182;</a></h3><h3 id="2.-How-long-does-the-effect-of-a-payout-last?-Does-a-paid-out-customer's-likelihood-to-renew-diminish-with-time-after-a-payout?-Or-is-it-static?">2. How long does the effect of a payout last? Does a paid out customer's likelihood to renew diminish with time after a payout? Or is it static?<a class="anchor-link" href="#2.-How-long-does-the-effect-of-a-payout-last?-Does-a-paid-out-customer's-likelihood-to-renew-diminish-with-time-after-a-payout?-Or-is-it-static?">&#182;</a></h3><h3 id="3.-What-effects-do-payout-requests-and-payouts-due-have-on-retention?-Is-it-a-drought-that-makes-a-farmer-purchase-a-policy,-or-is-it-the-experience-of-receiving-cash?">3. What effects do payout requests and payouts due have on retention? Is it a drought that makes a farmer purchase a policy, or is it the experience of receiving cash?<a class="anchor-link" href="#3.-What-effects-do-payout-requests-and-payouts-due-have-on-retention?-Is-it-a-drought-that-makes-a-farmer-purchase-a-policy,-or-is-it-the-experience-of-receiving-cash?">&#182;</a></h3><h3 id="4.-What-are-the-characteristics-of-repeat-customers---meaning-ones-who-buy-policies-for-consecutive-seasons?">4. What are the characteristics of repeat customers - meaning ones who buy policies for consecutive seasons?<a class="anchor-link" href="#4.-What-are-the-characteristics-of-repeat-customers---meaning-ones-who-buy-policies-for-consecutive-seasons?">&#182;</a></h3><h3 id="5.-Some-communities-appear-to-have-retention-rates-close-to-100%.-What-is-the-reason-behind-this?-What-are-the-characteristics-of-these-communities?-Do-they-have-large-numbers-of-customers?">5. Some communities appear to have retention rates close to 100%. What is the reason behind this? What are the characteristics of these communities? Do they have large numbers of customers?<a class="anchor-link" href="#5.-Some-communities-appear-to-have-retention-rates-close-to-100%.-What-is-the-reason-behind-this?-What-are-the-characteristics-of-these-communities?-Do-they-have-large-numbers-of-customers?">&#182;</a></h3><h3 id="6.-Do-recent-weather-events-(besides-drought)-influence-retention?-For-example,-does-experiencing-rain-make-customers-less-likely-to-take-out-a-policy?">6. Do recent weather events (besides drought) influence retention? For example, does experiencing rain make customers less likely to take out a policy?<a class="anchor-link" href="#6.-Do-recent-weather-events-(besides-drought)-influence-retention?-For-example,-does-experiencing-rain-make-customers-less-likely-to-take-out-a-policy?">&#182;</a></h3><h3 id="7.-As-a-follow-up-to-the-previous-question,-in-2018,-was-it-the-experience-of-drought-that-made-farmers-take-out-policies,-or-was-it-the-news-that-drought-was-expected?">7. As a follow up to the previous question, in 2018, was it the experience of drought that made farmers take out policies, or was it the news that drought was expected?<a class="anchor-link" href="#7.-As-a-follow-up-to-the-previous-question,-in-2018,-was-it-the-experience-of-drought-that-made-farmers-take-out-policies,-or-was-it-the-news-that-drought-was-expected?">&#182;</a></h3><h3 id="8.-I-would-try-and-get-the-lat/lon-of-communities-that-do-not-have-them.">8. I would try and get the lat/lon of communities that do not have them.<a class="anchor-link" href="#8.-I-would-try-and-get-the-lat/lon-of-communities-that-do-not-have-them.">&#182;</a></h3>
+<h2 id="Questions-I-would-explore-with-more-time:">Questions I would explore with more time:<a class="anchor-link" href="#Questions-I-would-explore-with-more-time:">&#182;</a></h2><h3 id="1.-What-effect-does-type-of-crop-have-on-retention-rates?-Are-some-crops-more-precious-and-therefore-more-likely-to-be-insured?">1. What effect does type of crop have on retention rates? Are some crops more precious and therefore more likely to be insured?<a class="anchor-link" href="#1.-What-effect-does-type-of-crop-have-on-retention-rates?-Are-some-crops-more-precious-and-therefore-more-likely-to-be-insured?">&#182;</a></h3><h3 id="2.-How-long-does-the-effect-of-a-payout-last?-Does-a-paid-out-customer's-likelihood-to-renew-diminish-with-time-after-a-payout?-Or-is-it-static?">2. How long does the effect of a payout last? Does a paid out customer's likelihood to renew diminish with time after a payout? Or is it static?<a class="anchor-link" href="#2.-How-long-does-the-effect-of-a-payout-last?-Does-a-paid-out-customer's-likelihood-to-renew-diminish-with-time-after-a-payout?-Or-is-it-static?">&#182;</a></h3><h3 id="3.-What-effects-do-payout-requests-and-payouts-due-have-on-retention?-Is-it-a-drought-that-makes-a-farmer-purchase-a-policy,-or-is-it-the-experience-of-receiving-cash?">3. What effects do payout requests and payouts due have on retention? Is it a drought that makes a farmer purchase a policy, or is it the experience of receiving cash?<a class="anchor-link" href="#3.-What-effects-do-payout-requests-and-payouts-due-have-on-retention?-Is-it-a-drought-that-makes-a-farmer-purchase-a-policy,-or-is-it-the-experience-of-receiving-cash?">&#182;</a></h3><h3 id="4.-What-are-the-characteristics-of-repeat-customers---meaning-ones-who-buy-policies-for-consecutive-seasons?">4. What are the characteristics of repeat customers - meaning ones who buy policies for consecutive seasons?<a class="anchor-link" href="#4.-What-are-the-characteristics-of-repeat-customers---meaning-ones-who-buy-policies-for-consecutive-seasons?">&#182;</a></h3><h3 id="5.-Many-communities-appear-to-have-either-very-high-or-very-low-retention-rates.-What-is-the-reason-behind-this?-What-are-the-characteristics-of-these-communities?-Do-they-have-large-numbers-of-customers?">5. Many communities appear to have either very high or very low retention rates. What is the reason behind this? What are the characteristics of these communities? Do they have large numbers of customers?<a class="anchor-link" href="#5.-Many-communities-appear-to-have-either-very-high-or-very-low-retention-rates.-What-is-the-reason-behind-this?-What-are-the-characteristics-of-these-communities?-Do-they-have-large-numbers-of-customers?">&#182;</a></h3><h3 id="6.-Do-recent-weather-events-(besides-drought)-influence-retention?-For-example,-does-experiencing-rain-make-customers-less-likely-to-take-out-a-policy?">6. Do recent weather events (besides drought) influence retention? For example, does experiencing rain make customers less likely to take out a policy?<a class="anchor-link" href="#6.-Do-recent-weather-events-(besides-drought)-influence-retention?-For-example,-does-experiencing-rain-make-customers-less-likely-to-take-out-a-policy?">&#182;</a></h3><h3 id="7.-As-a-follow-up-to-the-previous-question,-in-2018,-was-it-the-experience-of-drought-that-made-farmers-take-out-policies,-or-was-it-the-news-that-drought-was-expected?">7. As a follow up to the previous question, in 2018, was it the experience of drought that made farmers take out policies, or was it the news that drought was expected?<a class="anchor-link" href="#7.-As-a-follow-up-to-the-previous-question,-in-2018,-was-it-the-experience-of-drought-that-made-farmers-take-out-policies,-or-was-it-the-news-that-drought-was-expected?">&#182;</a></h3><h3 id="8.-I-would-try-and-get-the-lat/lon-of-communities-that-do-not-have-them.">8. I would try and get the lat/lon of communities that do not have them.<a class="anchor-link" href="#8.-I-would-try-and-get-the-lat/lon-of-communities-that-do-not-have-them.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data/Data-Model-Concerns:">Data/Data Model Concerns:<a class="anchor-link" href="#Data/Data-Model-Concerns:">&#182;</a></h2><h3 id="1.-Not-all-policies-have-a-corresponding-policy_transaction,-and-there-are-sometimes-duplicate-policy_transactions-for-a-single-policy.-policy_transactions-should-have-a-unique-customer_policy_id.">1. Not all policies have a corresponding policy_transaction, and there are sometimes duplicate policy_transactions for a single policy. policy_transactions should have a unique customer_policy_id.<a class="anchor-link" href="#1.-Not-all-policies-have-a-corresponding-policy_transaction,-and-there-are-sometimes-duplicate-policy_transactions-for-a-single-policy.-policy_transactions-should-have-a-unique-customer_policy_id.">&#182;</a></h3><h3 id="2.-I-was-unsure-of-the-purpose-of-the-community_payouts-table.-If-payouts-are-made-to-individual-farmers-(rather-than-communities-as-a-whole),-maybe-it-makes-more-sense-to-have-payouts-linked-to-customers-rather-than-communities.-This-could-live-in-a-table-called-customer_payouts,-and-could-have-a-foreign-key-linking-to-the-customers-table.-Customers-have-community-ids,-so-we-can-easily-do-a-group_by-to-recreate-the-community_payouts-table.">2. I was unsure of the purpose of the community_payouts table. If payouts are made to individual farmers (rather than communities as a whole), maybe it makes more sense to have payouts linked to customers rather than communities. This could live in a table called customer_payouts, and could have a foreign key linking to the customers table. Customers have community ids, so we can easily do a group_by to recreate the community_payouts table.<a class="anchor-link" href="#2.-I-was-unsure-of-the-purpose-of-the-community_payouts-table.-If-payouts-are-made-to-individual-farmers-(rather-than-communities-as-a-whole),-maybe-it-makes-more-sense-to-have-payouts-linked-to-customers-rather-than-communities.-This-could-live-in-a-table-called-customer_payouts,-and-could-have-a-foreign-key-linking-to-the-customers-table.-Customers-have-community-ids,-so-we-can-easily-do-a-group_by-to-recreate-the-community_payouts-table.">&#182;</a></h3><h3 id="3.-Most-customers-have-an-unassigned-gender.-Ditto-for-having-mobile-money.">3. Most customers have an unassigned gender. Ditto for having mobile money.<a class="anchor-link" href="#3.-Most-customers-have-an-unassigned-gender.-Ditto-for-having-mobile-money.">&#182;</a></h3><h3 id="4.-A-large-number-of-communities-don't-have-a-lat-lon.">4. A large number of communities don't have a lat lon.<a class="anchor-link" href="#4.-A-large-number-of-communities-don't-have-a-lat-lon.">&#182;</a></h3><h3 id="5.-Almost-all-farmers-have-plots-13-acres-in-area.-This-seems-suspicious-to-me.">5. Almost all farmers have plots 13 acres in area. This seems suspicious to me.<a class="anchor-link" href="#5.-Almost-all-farmers-have-plots-13-acres-in-area.-This-seems-suspicious-to-me.">&#182;</a></h3>
+<h2 id="Data/Data-Model-Concerns:">Data/Data Model Concerns:<a class="anchor-link" href="#Data/Data-Model-Concerns:">&#182;</a></h2><h3 id="1.-Not-all-policies-have-a-corresponding-policy_transaction.">1. Not all policies have a corresponding policy_transaction.<a class="anchor-link" href="#1.-Not-all-policies-have-a-corresponding-policy_transaction.">&#182;</a></h3><h3 id="2.-There-are-duplicated-community-payouts-for-a-particular-season,-sometimes-with-the-same-paid_date-and-status.-Perhaps-the-rows-should-be-unique-on-(community_id,-season,-status,-paid_date),-and-an-existing-row-should-be-updated-instead-of-adding-a-new-one.">2. There are duplicated community payouts for a particular season, sometimes with the same paid_date and status. Perhaps the rows should be unique on (community_id, season, status, paid_date), and an existing row should be updated instead of adding a new one.<a class="anchor-link" href="#2.-There-are-duplicated-community-payouts-for-a-particular-season,-sometimes-with-the-same-paid_date-and-status.-Perhaps-the-rows-should-be-unique-on-(community_id,-season,-status,-paid_date),-and-an-existing-row-should-be-updated-instead-of-adding-a-new-one.">&#182;</a></h3><h3 id="3.-Additionally,-perhaps-when-a-community_payout-is-created-with-status-paid,-the-status-of-all-the-corresponding-customer_policies-should-be-updated-to-paid-out-as-well.">3. Additionally, perhaps when a community_payout is created with status <em>paid</em>, the status of all the corresponding customer_policies should be updated to <em>paid out</em> as well.<a class="anchor-link" href="#3.-Additionally,-perhaps-when-a-community_payout-is-created-with-status-paid,-the-status-of-all-the-corresponding-customer_policies-should-be-updated-to-paid-out-as-well.">&#182;</a></h3><h3 id="4.-Most-customers-have-an-unassigned-gender.-Ditto-for-having-mobile-money.">4. Most customers have an unassigned gender. Ditto for having mobile money.<a class="anchor-link" href="#4.-Most-customers-have-an-unassigned-gender.-Ditto-for-having-mobile-money.">&#182;</a></h3><h3 id="5.-A-large-number-of-communities-don't-have-a-lat-lon.">5. A large number of communities don't have a lat lon.<a class="anchor-link" href="#5.-A-large-number-of-communities-don't-have-a-lat-lon.">&#182;</a></h3><h3 id="6.-Almost-all-farmers-have-plots-13-acres-in-area.-This-seems-suspicious-to-me.">6. Almost all farmers have plots 13 acres in area. This seems suspicious to me.<a class="anchor-link" href="#6.-Almost-all-farmers-have-plots-13-acres-in-area.-This-seems-suspicious-to-me.">&#182;</a></h3>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
